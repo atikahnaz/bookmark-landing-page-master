@@ -44,7 +44,7 @@
         </li>
       </div>
     </nav>
-    <header class="text-center p-8">
+    <header class="text-center px-8 py-10">
       <div class="">
         <img src="images/illustration-hero.svg" alt="" />
       </div>
@@ -57,7 +57,7 @@
         A clean and simple interface to organize your favourite websites. Open a
         new browser tab and see your sites load instantly. Try it for free.
       </p>
-      <div class="py-4">
+      <div class="pt-3 pb-10">
         <button
           class="bg-soft-blue font-normal text-slate-100 text-sm px-5 py-3 rounded-md"
         >
@@ -68,66 +68,89 @@
         </button>
       </div>
     </header>
-    <main class="text-center p-5">
-      <h3 class="text-2xl font-bold">Features</h3>
-      Our aim is to make it quick and easy for you to access your favourite
-      websites. Your bookmarks sync between your devices so you can access them
-      on the go.
-      <div>
-        <div>Simple Bookmarking</div>
-        <div>Speedy Searching</div>
-        <div>Easy Sharing</div>
+
+    <main class="text-center px-6 pt-10 border-2 border-blue-700">
+      <h3 class="text-2xl font-bold text-Very-Dark-Blue">Features</h3>
+      <p class="text-grayish-Blue py-4">
+        Our aim is to make it quick and easy for you to access your favourite
+        websites. Your bookmarks sync between your devices so you can access
+        them on the go.
+      </p>
+
+      <div class="text-Very-Dark-Blue text-base text-opacity-80 py-8">
+        <div class="py-3 border-y-2">Simple Bookmarking</div>
+        <div class="py-3 border-b-2">Speedy Searching</div>
+        <div class="py-3 border-b-2">Easy Sharing</div>
       </div>
-      <section>
+
+      <section id="bookmark" class="py-10 border-2 border-red-700">
         <img src="images/illustration-features-tab-1.svg" alt="" />
-        <h4 class="font-bold text-2xl">Bookmark in one click</h4>
-        <p>
+        <h4 class="font-bold text-2xl py-4 text-Very-Dark-Blue">
+          Bookmark in one click
+        </h4>
+        <p class="text-grayish-Blue text-base">
           Organize your bookmarks however you like. Our simple drag-and-drop
           interface gives you complete control over how you manage your
           favourite sites. More Info
         </p>
       </section>
-      <section>
+
+      <section id="search" class="hidden py-10 border-2 border-red-700">
         <img src="images/illustration-features-tab-2.svg" alt="" />
-        <h4 class="font-bold text-2xl">Intelligent search</h4>
-        <p>
+        <h4 class="font-bold text-2xl py-4 text-Very-Dark-Blue">
+          Intelligent search
+        </h4>
+        <p class="text-grayish-Blue text-base">
           Our powerful search feature will help you find saved sites in no time
           at all. No need to trawl through all of your bookmarks. More Info
         </p>
       </section>
-      <section>
+      <section id="share" class="hidden py-10 border-2 border-red-700">
         <img src="images/illustration-features-tab-3.svg" alt="" />
-        <h4 class="font-bold text-2xl">Share your bookmarks</h4>
-        <p>
+        <h4 class="font-bold text-2xl py-4 text-Very-Dark-Blue">
+          Share your bookmarks
+        </h4>
+        <p class="text-grayish-Blue text-base">
           Easily share your bookmarks and collections with others. Create a
           shareable link that you can send at the click of a button. More Info
         </p>
       </section>
     </main>
-    <article class="text-center p-5">
-      <h4 class="font-bold text-2xl">Download the extension</h4>
-      We’ve got more browsers in the pipeline. Please do let us know if you’ve
-      got a favourite you’d like us to prioritize.
-      <div class="border">
-        <img class="m-auto" src="images/logo-chrome.svg" alt="" />
-        <h6>Add to Chrome</h6>
-        <p>Minimum version 62</p>
-        <img src="images/bg-dots.svg" alt="" />
-        <div class="">Add & Install Extension</div>
-      </div>
-      <div class="border">
-        <img class="m-auto" src="images/logo-firefox.svg" alt="" />
-        <h6>Add to Firefox</h6>
-        <p>Minimum version 55</p>
-        <img src="images/bg-dots.svg" alt="" />
-        <div>Add & Install Extension</div>
-      </div>
-      <div class="border">
-        <img class="m-auto" src="images/logo-opera.svg" alt="" />
-        <h6>Add to Opera</h6>
-        <p>Minimum version 46</p>
-        <img src="images/bg-dots.svg" alt="" />
-        <div>Add & Install Extension</div>
+
+    <article class="text-center px-6 py-14 border-2 border-yellow-300">
+      <h4 class="font-bold text-2xl text-Very-Dark-Blue">
+        Download the extension
+      </h4>
+      <p class="text-grayish-Blue py-4">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+      <div class="px-4">
+        <div class="shadow-lg p-4 mb-4 rounded-lg">
+          <img class="m-auto" src="images/logo-chrome.svg" alt="" />
+          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+            Add to Chrome
+          </h6>
+          <p class="text-grayish-Blue text-sm">Minimum version 62</p>
+          <img class="py-5" src="images/bg-dots.svg" alt="" />
+          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+            Add & Install Extension
+          </div>
+        </div>
+        <div class="border">
+          <img class="m-auto" src="images/logo-firefox.svg" alt="" />
+          <h6>Add to Firefox</h6>
+          <p>Minimum version 55</p>
+          <img src="images/bg-dots.svg" alt="" />
+          <div>Add & Install Extension</div>
+        </div>
+        <div class="border">
+          <img class="m-auto" src="images/logo-opera.svg" alt="" />
+          <h6>Add to Opera</h6>
+          <p>Minimum version 46</p>
+          <img src="images/bg-dots.svg" alt="" />
+          <div>Add & Install Extension</div>
+        </div>
       </div>
     </article>
 
