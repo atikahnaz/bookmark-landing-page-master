@@ -63,13 +63,15 @@
         >
           Get it on Chrome
         </button>
-        <button class="bg-slate-100 font-normal text-sm px-5 py-3 rounded-md">
+        <button
+          class="bg-slate-100 shadow-lg font-normal text-sm px-5 py-3 rounded-md"
+        >
           Get it on Firefox
         </button>
       </div>
     </header>
 
-    <main class="text-center px-6 pt-10 border-2 border-blue-700">
+    <main class="text-center px-6 pt-10">
       <h3 class="text-2xl font-bold text-Very-Dark-Blue">Features</h3>
       <p class="text-grayish-Blue py-4">
         Our aim is to make it quick and easy for you to access your favourite
@@ -78,12 +80,16 @@
       </p>
 
       <div class="text-Very-Dark-Blue text-base text-opacity-80 py-8">
-        <div class="py-3 border-y-2">Simple Bookmarking</div>
+        <div class="border-b-2"></div>
+        <div class="py-3 border-b-4 border-soft-Red w-1/2 m-auto">
+          Simple Bookmarking
+        </div>
+        <div class="border-b-2"></div>
         <div class="py-3 border-b-2">Speedy Searching</div>
         <div class="py-3 border-b-2">Easy Sharing</div>
       </div>
 
-      <section id="bookmark" class="py-10 border-2 border-red-700">
+      <section id="bookmark" class="py-10">
         <img src="images/illustration-features-tab-1.svg" alt="" />
         <h4 class="font-bold text-2xl py-4 text-Very-Dark-Blue">
           Bookmark in one click
@@ -117,7 +123,7 @@
       </section>
     </main>
 
-    <article class="text-center px-6 py-14 border-2 border-yellow-300">
+    <article class="text-center px-6 py-14">
       <h4 class="font-bold text-2xl text-Very-Dark-Blue">
         Download the extension
       </h4>
@@ -137,93 +143,110 @@
             Add & Install Extension
           </div>
         </div>
-        <div class="border">
+
+        <div class="shadow-lg p-4 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-firefox.svg" alt="" />
-          <h6>Add to Firefox</h6>
+          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+            Add to Firefox
+          </h6>
           <p>Minimum version 55</p>
-          <img src="images/bg-dots.svg" alt="" />
-          <div>Add & Install Extension</div>
+          <img class="py-5" src="images/bg-dots.svg" alt="" />
+          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+            Add & Install Extension
+          </div>
         </div>
-        <div class="border">
+
+        <div class="shadow-lg p-4 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-opera.svg" alt="" />
-          <h6>Add to Opera</h6>
+          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+            Add to Opera
+          </h6>
           <p>Minimum version 46</p>
-          <img src="images/bg-dots.svg" alt="" />
-          <div>Add & Install Extension</div>
+          <img class="py-5" src="images/bg-dots.svg" alt="" />
+          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+            Add & Install Extension
+          </div>
         </div>
       </div>
     </article>
 
-    <aside class="text-center p-5">
-      <h3 class="font-bold text-2xl">Frequently Asked Questions</h3>
-      <p>
+    <aside class="text-center p-6">
+      <h3 class="font-semibold text-2xl text-Very-Dark-Blue">
+        Frequently Asked Questions
+      </h3>
+      <p class="text-grayish-Blue pt-5 pb-10">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
 
-      <section>
-        <div class="flex justify-between">
-          <!-- Question 1 -->
-          <h6>What is Bookmark?</h6>
-          <div><img src="images/icon-arrow.svg" alt="" /></div>
-        </div>
-        <div class="hidden">
-          <!-- Answer 1 -->
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis
-          quam ornare mattis.
-        </div>
-      </section>
+      <div class="text-Very-Dark-Blue pb-7">
+        <section class="py-4 border-b-2">
+          <div class="flex justify-between items-center">
+            <!-- Question 1 -->
+            <h6>What is Bookmark?</h6>
+            <div class=""><img src="images/icon-arrow.svg" alt="" /></div>
+          </div>
+          <div class="hidden">
+            <!-- Answer 1 -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </div>
+        </section>
 
-      <section>
-        <div class="flex justify-between">
-          <h6>
-            <!-- Question 2 -->
-            How can I request a new browser?
-          </h6>
-          <div><img src="images/icon-arrow.svg" alt="" /></div>
-        </div>
-        <div class="hidden">
-          <!-- Answer 2 -->
-          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-          aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-          Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-        </div>
-      </section>
+        <section class="py-4 border-b-2">
+          <div class="flex justify-between items-center">
+            <h6>
+              <!-- Question 2 -->
+              How can I request a new browser?
+            </h6>
+            <div><img src="images/icon-arrow.svg" alt="" /></div>
+          </div>
+          <div class="hidden">
+            <!-- Answer 2 -->
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </div>
+        </section>
 
-      <section>
-        <div class="flex justify-between">
-          <!-- Question 3 -->
-          <h6>Is there a mobile app?</h6>
-          <div><img src="images/icon-arrow.svg" alt="" /></div>
-        </div>
-        <div class="hidden">
-          <!-- Answer 3 -->
-          Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-          vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-          quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex
-          et ultricies bibendum.
-        </div>
-      </section>
+        <section class="py-4 border-b-2">
+          <div class="flex justify-between items-center">
+            <!-- Question 3 -->
+            <h6>Is there a mobile app?</h6>
+            <div><img src="images/icon-arrow.svg" alt="" /></div>
+          </div>
+          <div class="hidden">
+            <!-- Answer 3 -->
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </div>
+        </section>
 
-      <section>
-        <div class="flex justify-between">
-          <!-- Question 4 -->
-          <h6>What about other Chromium browsers?</h6>
-          <div><img src="images/icon-arrow.svg" alt="" /></div>
-        </div>
-        <div class="hidden">
-          <!-- Answer 4 -->
-          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-          mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque
-          non ut velit. More Info 35,000+ already joined Stay up-to-date with
-          what we’re doing Contact Us Features Pricing Contact
-        </div>
-      </section>
+        <section class="py-4 border-b-2">
+          <div class="flex justify-between items-center">
+            <!-- Question 4 -->
+            <h6>What about other Chromium browsers?</h6>
+            <div><img src="images/icon-arrow.svg" alt="" /></div>
+          </div>
+          <div class="hidden">
+            <!-- Answer 4 -->
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit. More Info 35,000+ already joined Stay
+            up-to-date with what we’re doing Contact Us Features Pricing Contact
+          </div>
+        </section>
+      </div>
 
-      <div>More Info</div>
+      <button class="bg-soft-blue text-slate-50 px-5 py-3 rounded-md text-sm">
+        More Info
+      </button>
     </aside>
 
     <footer>
