@@ -18,30 +18,3 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("shareBtn")
     .addEventListener("click", () => showFeatures("share"));
 });
-
-function showBookmark() {
-  var elementBookmark = document.getElementById("bookmark");
-  var elementSearch = document.getElementById("search");
-  var elementShare = document.getElementById("share");
-  elementBookmark.classList.remove("hidden");
-  elementSearch.classList.add("hidden");
-  elementShare.classList.add("hidden");
-}
-
-function showSearch() {
-  var elementBookmark = document.getElementById("bookmark");
-  var elementSearch = document.getElementById("search");
-  var elementShare = document.getElementById("share");
-  elementBookmark.classList.add("hidden");
-  elementSearch.classList.remove("hidden");
-  elementShare.classList.add("hidden");
-}
-
-function showShare() {
-  var elementBookmark = document.getElementById("bookmark");
-  var elementSearch = document.getElementById("search");
-  var elementShare = document.getElementById("share");
-  elementBookmark.classList.add("hidden");
-  elementSearch.classList.add("hidden");
-  elementShare.classList.remove("hidden");
-}
