@@ -3,18 +3,56 @@ document.addEventListener("DOMContentLoaded", () => {
   var elementSearch = document.getElementById("search");
   var elementShare = document.getElementById("share");
 
-  function showFeatures(item) {
-    elementBookmark.classList.toggle("hidden", item !== "bookmark");
-    elementSearch.classList.toggle("hidden", item !== "search");
-    elementShare.classList.toggle("hidden", item !== "share");
+  document
+    .getElementById("q1")
+    .addEventListener("click", () => showAnswer("answer1"));
+  document
+    .getElementById("q2")
+    .addEventListener("click", () => showAnswer("answer2"));
+  document
+    .getElementById("q3")
+    .addEventListener("click", () => showAnswer("answer3"));
+  document
+    .getElementById("q4")
+    .addEventListener("click", () => showAnswer("answer4"));
+
+  function showAnswer(question) {
+    document.getElementById(question).classList.toggle("hidden");
   }
+
+  function showFeatures(item, barRed) {
+    elementBookmark.classList.toggle("hidden", item !== "bookmark");
+    document
+      .getElementById("redBookmark")
+      .classList.toggle("hidden", barRed !== "redBookmark");
+    document
+      .getElementById("bookmarkBtn")
+      .classList.toggle("text-Very-Dark-Blue", barRed === "redBookmark");
+
+    elementSearch.classList.toggle("hidden", item !== "search");
+    document
+      .getElementById("redSearch")
+      .classList.toggle("hidden", barRed !== "redSearch");
+    document
+      .getElementById("searchBtn")
+      .classList.toggle("text-Very-Dark-Blue", barRed === "redSearch");
+
+    elementShare.classList.toggle("hidden", item !== "share");
+    document
+      .getElementById("redShare")
+      .classList.toggle("hidden", barRed !== "redShare");
+    document
+      .getElementById("shareBtn")
+      .classList.toggle("text-Very-Dark-Blue", barRed === "redShare");
+  }
+
   document
     .getElementById("bookmarkBtn")
-    .addEventListener("click", () => showFeatures("bookmark"));
+    .addEventListener("click", () => showFeatures("bookmark", "redBookmark"));
   document
     .getElementById("searchBtn")
-    .addEventListener("click", () => showFeatures("search"));
+    .addEventListener("click", () => showFeatures("search", "redSearch"));
   document
     .getElementById("shareBtn")
-    .addEventListener("click", () => showFeatures("share"));
+    .addEventListener("click", () => showFeatures("share", "redShare"));
 });

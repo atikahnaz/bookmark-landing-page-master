@@ -83,22 +83,36 @@
         them on the go.
       </p>
 
-      <div class="font-medium text-lg text-opacity-80 px-3 py-8">
+      <div
+        class="font-medium text-lg text-opacity-80 px-3 py-8 text-grayish-Blue"
+      >
         <div class="border-b-2"></div>
 
         <div class="border-b-2">
           <div id="bookmarkBtn" class="py-4 text-Very-Dark-Blue">
             Simple Bookmarking
           </div>
-          <div class="border-b-4 w-1/2 m-auto border-soft-Red"></div>
+          <div
+            id="redBookmark"
+            class="border-b-4 w-1/2 m-auto border-soft-Red"
+          ></div>
         </div>
 
-        <div id="searchBtn" class="py-4 text-grayish-Blue">
-          Speedy Searching
+        <div class="border-b-2">
+          <div id="searchBtn" class="py-4">Speedy Searching</div>
+          <div
+            id="redSearch"
+            class="hidden border-b-4 w-1/2 m-auto border-soft-Red"
+          ></div>
         </div>
-        <div class="border-b-2"></div>
-        <div id="shareBtn" class="py-4 text-grayish-Blue">Easy Sharing</div>
-        <div class="border-b-2"></div>
+
+        <div class="border-b-2">
+          <div id="shareBtn" class="py-4">Easy Sharing</div>
+          <div
+            id="redShare"
+            class="hidden border-b-4 w-1/2 m-auto border-soft-Red"
+          ></div>
+        </div>
       </div>
 
       <section id="bookmark" class="py-10">
@@ -135,6 +149,7 @@
       </section>
     </main>
 
+    <!--Download the extension card-->
     <article class="text-center px-6 py-14">
       <h4 class="font-bold text-2xl text-Very-Dark-Blue">
         Download the extension
@@ -143,44 +158,47 @@
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.
       </p>
-      <div class="px-4">
-        <div class="shadow-lg p-4 mb-4 rounded-lg">
+
+      <div class="py-10 px-5 space-y-10">
+        <div class="shadow-lg px-4 py-7 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-chrome.svg" alt="" />
-          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+          <h6 class="mt-4 py-2 text-Very-Dark-Blue text-lg font-medium">
             Add to Chrome
           </h6>
-          <p class="text-grayish-Blue text-sm">Minimum version 62</p>
+          <p class="pb-3 text-grayish-Blue text-sm">Minimum version 62</p>
           <img class="py-5" src="images/bg-dots.svg" alt="" />
-          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+          <div class="mx-3 py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
             Add & Install Extension
           </div>
         </div>
 
-        <div class="shadow-lg p-4 mb-4 rounded-lg">
+        <div class="shadow-lg px-4 py-7 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-firefox.svg" alt="" />
-          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+          <h6 class="mt-4 py-2 text-Very-Dark-Blue text-lg font-medium">
             Add to Firefox
           </h6>
-          <p>Minimum version 55</p>
+          <p class="pb-3 text-grayish-Blue text-sm">Minimum version 55</p>
           <img class="py-5" src="images/bg-dots.svg" alt="" />
-          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+          <div class="mx-3 py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
             Add & Install Extension
           </div>
         </div>
 
-        <div class="shadow-lg p-4 mb-4 rounded-lg">
+        <div class="shadow-lg px-4 py-7 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-opera.svg" alt="" />
-          <h6 class="py-2 text-Very-Dark-Blue text-lg font-medium">
+          <h6 class="mt-4 py-2 text-Very-Dark-Blue text-lg font-medium">
             Add to Opera
           </h6>
-          <p>Minimum version 46</p>
+          <p class="pb-3 text-grayish-Blue text-sm">Minimum version 46</p>
           <img class="py-5" src="images/bg-dots.svg" alt="" />
-          <div class="py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
+          <div class="mx-3 py-3 text-sm rounded-lg bg-soft-blue text-slate-50">
             Add & Install Extension
           </div>
         </div>
       </div>
     </article>
+
+    <!--Questions-->
 
     <aside class="text-center p-6">
       <h3 class="font-semibold text-2xl text-Very-Dark-Blue">
@@ -191,14 +209,16 @@
         answered please feel free to email us.
       </p>
 
-      <div class="text-Very-Dark-Blue pb-7">
+      <div class="text-Very-Dark-Blue pb-7 text-left">
         <section class="py-4 border-b-2">
           <div class="flex justify-between items-center">
             <!-- Question 1 -->
             <h6>What is Bookmark?</h6>
-            <div class=""><img src="images/icon-arrow.svg" alt="" /></div>
+            <div id="q1" class="">
+              <img src="images/icon-arrow.svg" alt="" />
+            </div>
           </div>
-          <div class="hidden">
+          <div id="answer1" class="hidden pt-5 pb-2">
             <!-- Answer 1 -->
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
@@ -212,9 +232,9 @@
               <!-- Question 2 -->
               How can I request a new browser?
             </h6>
-            <div><img src="images/icon-arrow.svg" alt="" /></div>
+            <div id="q2"><img src="images/icon-arrow.svg" alt="" /></div>
           </div>
-          <div class="hidden">
+          <div id="answer2" class="hidden pt-5 pb-2">
             <!-- Answer 2 -->
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
@@ -229,9 +249,9 @@
           <div class="flex justify-between items-center">
             <!-- Question 3 -->
             <h6>Is there a mobile app?</h6>
-            <div><img src="images/icon-arrow.svg" alt="" /></div>
+            <div id="q3"><img src="images/icon-arrow.svg" alt="" /></div>
           </div>
-          <div class="hidden">
+          <div id="answer3" class="hidden pt-5 pb-2">
             <!-- Answer 3 -->
             Sed consectetur quam id neque fermentum accumsan. Praesent luctus
             vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
@@ -244,9 +264,12 @@
           <div class="flex justify-between items-center">
             <!-- Question 4 -->
             <h6>What about other Chromium browsers?</h6>
-            <div><img src="images/icon-arrow.svg" alt="" /></div>
+            <div id="q4">
+              <svg></svg>
+              <img src="images/icon-arrow.svg" alt="" />
+            </div>
           </div>
-          <div class="hidden">
+          <div id="answer4" class="hidden pt-5 pb-2">
             <!-- Answer 4 -->
             Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
             mi, at euismod dui. Aliquam vitae neque eget nisl gravida
