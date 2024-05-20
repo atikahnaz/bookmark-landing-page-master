@@ -32,7 +32,7 @@
         <img src="images/logo-bookmark.svg" alt="" />
       </div>
 
-      <div>
+      <div onclick="showMenu()">
         <img src="images/icon-hamburger.svg" alt="" />
       </div>
 
@@ -45,6 +45,29 @@
         </li>
       </div>
     </nav>
+
+    <div
+      id="hamburgerMenu"
+      class="absolute top-0 w-screen h-dvh py-10 px-8 bg-slate-500 text-white"
+    >
+      <!--logo bookmark-->
+      <div class="flex justify-between items-center">
+        <img src="images/logo-bookmark.svg" alt="" />
+        <div onclick="showMenu()">
+          <img src="images/icon-close.svg" alt="" />
+        </div>
+      </div>
+
+      <!--menu-->
+      <div
+        class="text-center uppercase tracking-wider flex flex-col space-y-8 py-8 text-xl mt-10"
+      >
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+      </div>
+    </div>
 
     <!--header with hero image-->
     <header class="text-center px-5 py-10">
@@ -218,7 +241,7 @@
               <img src="images/icon-arrow.svg" alt="" />
             </div>
           </div>
-          <div id="answer1" class="hidden pt-5 pb-2">
+          <div id="answer1" class="hidden pt-5 pb-2 text-grayish-Blue">
             <!-- Answer 1 -->
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
@@ -234,7 +257,7 @@
             </h6>
             <div id="q2"><img src="images/icon-arrow.svg" alt="" /></div>
           </div>
-          <div id="answer2" class="hidden pt-5 pb-2">
+          <div id="answer2" class="hidden pt-5 pb-2 text-grayish-Blue">
             <!-- Answer 2 -->
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
@@ -251,7 +274,7 @@
             <h6>Is there a mobile app?</h6>
             <div id="q3"><img src="images/icon-arrow.svg" alt="" /></div>
           </div>
-          <div id="answer3" class="hidden pt-5 pb-2">
+          <div id="answer3" class="hidden pt-5 pb-2 text-grayish-Blue">
             <!-- Answer 3 -->
             Sed consectetur quam id neque fermentum accumsan. Praesent luctus
             vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
@@ -265,11 +288,10 @@
             <!-- Question 4 -->
             <h6>What about other Chromium browsers?</h6>
             <div id="q4">
-              <svg></svg>
               <img src="images/icon-arrow.svg" alt="" />
             </div>
           </div>
-          <div id="answer4" class="hidden pt-5 pb-2">
+          <div id="answer4" class="hidden pt-5 pb-2 text-grayish-Blue">
             <!-- Answer 4 -->
             Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
             mi, at euismod dui. Aliquam vitae neque eget nisl gravida

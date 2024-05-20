@@ -56,3 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("shareBtn")
     .addEventListener("click", () => showFeatures("share", "redShare"));
 });
+
+function showMenu() {
+  document.getElementById("hamburgerMenu").classList.toggle("hidden");
+}
