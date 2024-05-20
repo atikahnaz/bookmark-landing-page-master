@@ -32,7 +32,7 @@
         <img src="images/logo-bookmark.svg" alt="" />
       </div>
 
-      <div onclick="showMenu()">
+      <div onclick="showMenu()" class="md:hidden">
         <img src="images/icon-hamburger.svg" alt="" />
       </div>
 
@@ -48,7 +48,7 @@
 
     <div
       id="hamburgerMenu"
-      class="absolute top-0 w-screen h-dvh py-10 px-8 bg-slate-500 text-white"
+      class="md:hidden absolute top-0 w-screen h-dvh py-10 px-10 bg-Very-Dark-Blue bg-opacity-95 text-white"
     >
       <!--logo bookmark-->
       <div class="flex justify-between items-center">
@@ -60,12 +60,12 @@
 
       <!--menu-->
       <div
-        class="text-center uppercase tracking-wider flex flex-col space-y-8 py-8 text-xl mt-10"
+        class="text-center uppercase tracking-wider flex flex-col py-8 text-xl mt-10"
       >
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-        <a href="#login">Login</a>
+        <a class="border-y py-5" href="#features">Features</a>
+        <a class="border-b py-5" href="#pricing">Pricing</a>
+        <a class="border-b py-5" href="#contact">Contact</a>
+        <a class="py-2 mt-6 border-2 rounded-lg" href="#login">Login</a>
       </div>
     </div>
 
