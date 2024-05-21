@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showAnswer(question) {
     document.getElementById(question).classList.toggle("hidden");
+    changeArrow();
+  }
+  function changeArrow() {
+    console.log("arrow");
+    document.getElementById("arrow1").classList.toggle("stroke-soft-Red");
   }
 
   function showFeatures(item, barRed) {
