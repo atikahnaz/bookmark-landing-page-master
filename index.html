@@ -27,7 +27,7 @@
     </style>
   </head>
   <body class="font-font-rubik">
-    <nav class="flex justify-between px-8 py-8">
+    <nav class="flex justify-between px-8 py-8 lg:mx-24">
       <div>
         <img src="images/logo-bookmark.svg" alt="" />
       </div>
@@ -36,13 +36,15 @@
         <img src="images/icon-hamburger.svg" alt="" />
       </div>
 
-      <div class="hidden md:flex">
-        <li>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-          <a href="#login">Login</a>
-        </li>
+      <div
+        class="hidden md:flex uppercase text-Very-Dark-Blue w-1/2 space-x-10 justify-end items-center"
+      >
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="bg-soft-Red text-white px-5 rounded-md py-2" href="#login"
+          >Login</a
+        >
       </div>
     </nav>
 
@@ -77,13 +79,14 @@
         ></div>
         <img class="relative z-30" src="images/illustration-hero.svg" alt="" />
       </div>
-      <div>
+
+      <div class="lg:m-auto lg:text-left lg:mx-24 lg:w-1/2 lg:pr-5">
         <h1
-          class="font-medium py-4 text-3xl font-font-rubik text-Very-Dark-Blue"
+          class="lg:text-5xl font-medium py-4 text-3xl font-font-rubik text-Very-Dark-Blue"
         >
           A Simple Bookmark Manager
         </h1>
-        <p class="text-grayish-Blue text-base py-4 px-2">
+        <p class="lg:text-lg text-grayish-Blue text-base py-4 px-2">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>

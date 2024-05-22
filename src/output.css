@@ -710,6 +710,10 @@ video {
   width: fit-content;
 }
 
+.w-1\/3{
+  width: 33.333333%;
+}
+
 .max-w-96{
   max-width: 24rem;
 }
@@ -737,6 +741,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -787,6 +795,18 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-lg{
@@ -1090,12 +1110,27 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:mx-8{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .md\:mx-14{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   .md\:flex{
     display: flex;
   }
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:bg-soft-Red{
+    --tw-bg-opacity: 1;
+    background-color: hsl(0 94% 66% / var(--tw-bg-opacity));
   }
 }
 
@@ -1149,6 +1184,16 @@ video {
   .lg\:my-24{
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .lg\:mx-14{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .lg\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .lg\:mb-0{
@@ -1205,6 +1250,10 @@ video {
 
   .lg\:mr-3{
     margin-right: 0.75rem;
+  }
+
+  .lg\:mt-12{
+    margin-top: 3rem;
   }
 
   .lg\:block{
@@ -1347,6 +1396,11 @@ video {
     background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   }
 
+  .lg\:bg-soft-Red{
+    --tw-bg-opacity: 1;
+    background-color: hsl(0 94% 66% / var(--tw-bg-opacity));
+  }
+
   .lg\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1420,7 +1474,26 @@ video {
     padding-left: 0px;
   }
 
+  .lg\:pr-5{
+    padding-right: 1.25rem;
+  }
+
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
