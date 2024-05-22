@@ -104,9 +104,9 @@
 
     <!--Feature with tab-->
     <main class="text-center px-6 pt-10">
-      <div>
+      <div class="max-w-md m-auto">
         <h3 class="text-2xl font-medium text-Very-Dark-Blue">Features</h3>
-        <p class="text-grayish-Blue py-4 text-base max-w-screen-md m-auto">
+        <p class="text-grayish-Blue py-4 text-base m-auto">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -114,8 +114,9 @@
       </div>
 
       <!--tab features-->
+      <!--mobile-->
       <div
-        class="font-medium text-lg text-opacity-80 px-3 py-8 text-grayish-Blue"
+        class="lg:hidden font-medium text-lg text-opacity-80 px-3 py-8 text-grayish-Blue"
       >
         <div class="border-b-2"></div>
 
@@ -146,26 +147,47 @@
         </div>
       </div>
 
-      <section id="bookmark" class="py-10">
-        <div class="relative">
+      <!--desktop design tab 1024px lg-->
+      <div
+        class="hidden lg:flex w-fit m-auto border-b text-grayish-Blue space-x-20"
+      >
+        <div
+          id="bookmarkDesktop"
+          class="border-b-2 border-soft-Red py-4 text-Very-Dark-Blue"
+        >
+          Simple Bookmarking
+        </div>
+        <div id="searchDesktop" class="py-4">Speedy Searching</div>
+        <div id="shareDesktop" class="py-4">Easy Sharing</div>
+      </div>
+
+      <section id="bookmark" class="py-10 lg:flex">
+        <div class="relative lg:w-1/2">
           <div
             class="absolute left-0 -ml-6 z-0 top-9 w-full h-full rounded-r-full bg-soft-blue"
           ></div>
           <img
-            class="relative mb-8 z-20"
+            class="relative mb-8 lg:mb-0 z-20 lg:ml-36"
             src="images/illustration-features-tab-1.svg"
             alt=""
           />
         </div>
 
-        <h4 class="font-medium text-2xl py-4 text-Very-Dark-Blue">
-          Bookmark in one click
-        </h4>
-        <p class="text-grayish-Blue text-base">
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites. More Info
-        </p>
+        <div class="lg:max-w-md lg:m-auto lg:text-left">
+          <h4 class="font-medium text-2xl py-4 text-Very-Dark-Blue">
+            Bookmark in one click
+          </h4>
+          <p class="text-grayish-Blue text-base">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites. More Info
+          </p>
+          <button
+            class="hidden lg:block bg-soft-blue px-4 py-3 rounded-md text-white my-8"
+          >
+            More Info
+          </button>
+        </div>
       </section>
 
       <section id="search" class="hidden py-10">
@@ -212,7 +234,9 @@
     </main>
 
     <!--Download the extension card-->
-    <article class="text-center px-6 py-14">
+    <article
+      class="text-center px-6 py-14 lg:max-w-screen-lg lg:mx-auto lg:px-24"
+    >
       <h4 class="font-medium text-2xl text-Very-Dark-Blue">
         Download the extension
       </h4>
@@ -222,9 +246,9 @@
       </p>
 
       <div
-        class="py-10 px-5 space-y-10 flex flex-col items-center lg:flex-row lg:justify-between lg:space-y-0"
+        class="py-10 px-5 lg:space-y-0 space-y-10 flex flex-col items-center lg:flex-row lg:justify-between lg:space-x-8"
       >
-        <div class="max-w-96 shadow-lg px-4 py-7 mb-4 lg:mb-0 rounded-lg">
+        <div class="max-w-96 shadow-lg px-4 py-7 mb-4 rounded-lg">
           <img class="m-auto" src="images/logo-chrome.svg" alt="" />
           <h6 class="mt-4 py-2 text-Very-Dark-Blue text-lg font-medium">
             Add to Chrome
@@ -264,7 +288,7 @@
 
     <!--Questions-->
 
-    <aside class="text-center p-6">
+    <aside class="text-center p-6 lg:max-w-lg lg:m-auto">
       <h3 class="font-medium text-2xl text-Very-Dark-Blue px-6">
         Frequently Asked Questions
       </h3>
@@ -356,13 +380,17 @@
     </aside>
 
     <div class="bg-soft-blue py-10 px-5 tracking-widest">
-      <div class="text-center text-white">
+      <div class="text-center text-white lg:max-w-md lg:m-auto">
         <p class="uppercase text-sm">35,000 already joined</p>
         <h6 class="text-2xl py-4">Stay up-to-date with that we're doing</h6>
       </div>
-      <form class="flex flex-col py-4" action="" method="post">
+      <form
+        class="flex flex-col py-4 lg:max-w-md lg:m-auto lg:flex-row lg:justify-between"
+        action=""
+        method="post"
+      >
         <input
-          class="rounded-md mb-4 px-5 py-4 text-base"
+          class="rounded-md mb-4 lg:mb-0 lg:w-full lg:mr-3 px-5 py-4 text-base"
           type="email"
           name=""
           id="email"
@@ -377,16 +405,22 @@
     </div>
 
     <footer class="bg-Very-Dark-Blue py-10">
-      <div class="">
-        <img class="m-auto" src="images/logo-bookmark.svg" alt="" />
+      <div class="lg:flex lg:px-24 lg:justify-between">
+        <img
+          class="m-auto lg:mx-0 lg:max-w-fit lg:bg-slate-100"
+          src="images/logo-bookmark.svg"
+          alt=""
+        />
         <div
-          class="text-white text-lg uppercase text-center flex flex-col space-y-8 py-8 tracking-widest"
+          class="lg:flex lg:w-full lg:pl-10 lg:space-x-5 lg:flex-row lg:space-y-0 text-white text-lg uppercase text-center flex flex-col space-y-8 py-8 tracking-widest"
         >
           <a href="">features</a>
           <a href="">pricing</a>
           <a href="">contact</a>
         </div>
-        <div class="flex justify-center space-x-10 py-8">
+        <div
+          class="flex justify-center space-x-10 py-8 lg:items-center lg:mr-0"
+        >
           <img src="images/icon-facebook.svg" alt="" />
           <img src="images/icon-twitter.svg" alt="" />
         </div>
