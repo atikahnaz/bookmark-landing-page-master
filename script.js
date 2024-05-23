@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   var elementSearch = document.getElementById("search");
   var elementShare = document.getElementById("share");
 
+  // question answer
+
   document
     .getElementById("q1")
     .addEventListener("click", () => showAnswer("answer1"));
@@ -24,6 +26,44 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("arrow");
     document.getElementById("arrow1").classList.toggle("stroke-soft-Red");
   }
+
+  // features for desktop
+  document
+    .getElementById("bookmarkDesktop")
+    .addEventListener("click", () =>
+      showFeaturesDesktop("bookmark", "bookmarkDesktop")
+    );
+
+  document
+    .getElementById("searchDesktop")
+    .addEventListener("click", () =>
+      showFeaturesDesktop("search", "searchDesktop")
+    );
+
+  document
+    .getElementById("shareDesktop")
+    .addEventListener("click", () =>
+      showFeaturesDesktop("share", "shareDesktop")
+    );
+
+  function toggleClasses(contentId, tabId, item, redUnderline) {
+    const content = document.getElementById(contentId);
+    const tab = document.getElementById(tabId);
+
+    content.classList.toggle("hidden", item !== contentId);
+    content.classList.toggle("lg:flex", item === contentId);
+    tab.classList.toggle("border-b-2", redUnderline === tabId);
+    tab.classList.toggle("border-soft-Red", redUnderline === tabId);
+    tab.classList.toggle("text-Very-Dark-Blue", redUnderline === tabId);
+  }
+
+  function showFeaturesDesktop(item, redUnderline) {
+    toggleClasses("bookmark", "bookmarkDesktop", item, redUnderline);
+    toggleClasses("search", "searchDesktop", item, redUnderline);
+    toggleClasses("share", "shareDesktop", item, redUnderline);
+  }
+
+  // features for mobile
 
   function showFeatures(item, barRed) {
     elementBookmark.classList.toggle("hidden", item !== "bookmark");
@@ -65,3 +105,5 @@ document.addEventListener("DOMContentLoaded", () => {
 function showMenu() {
   document.getElementById("hamburgerMenu").classList.toggle("hidden");
 }
+
+// DOM content loaded

@@ -119,7 +119,7 @@
       <!--tab features-->
       <!--mobile-->
       <div
-        class="lg:hidden font-medium text-lg text-opacity-80 px-3 py-8 text-grayish-Blue"
+        class="lg:hidden lg:justify-center font-medium text-lg text-opacity-80 px-3 py-8 text-grayish-Blue"
       >
         <div class="border-b-2"></div>
 
@@ -154,16 +154,14 @@
       <div
         class="hidden lg:flex w-fit m-auto border-b text-grayish-Blue space-x-20"
       >
-        <div
-          id="bookmarkDesktop"
-          class="border-b-2 border-soft-Red py-4 text-Very-Dark-Blue"
-        >
+        <div id="bookmarkDesktop" class="py-4 border-b-2 border-soft-Red">
           Simple Bookmarking
         </div>
         <div id="searchDesktop" class="py-4">Speedy Searching</div>
         <div id="shareDesktop" class="py-4">Easy Sharing</div>
       </div>
 
+      <!--show content tab-->
       <section id="bookmark" class="py-10 lg:flex">
         <div class="relative lg:w-1/2">
           <div
@@ -176,7 +174,7 @@
           />
         </div>
 
-        <div class="lg:max-w-md lg:m-auto lg:text-left">
+        <div class="lg:max-w-md lg:text-left">
           <h4 class="font-medium text-2xl py-4 text-Very-Dark-Blue">
             Bookmark in one click
           </h4>
@@ -193,25 +191,29 @@
         </div>
       </section>
 
-      <section id="search" class="hidden py-10">
-        <div class="relative">
+      <section id="search" class="hidden py-10 bg-gray-600">
+        <div class="relative lg:w-1/2">
           <div
-            class="absolute left-0 -ml-6 z-0 top-9 w-full h-full rounded-r-full bg-soft-blue"
+            class="absolute left-0 -ml-6 z-0 top-9 w-full h-full lg:h-2/3 rounded-r-full bg-soft-blue"
           ></div>
-          <img
-            class="relative mb-8 z-20"
-            src="images/illustration-features-tab-2.svg"
-            alt=""
-          />
+          <div class="bg-amber-400">
+            <img
+              class="relative mb-8 z-20"
+              src="images/illustration-features-tab-2.svg"
+              alt=""
+            />
+          </div>
         </div>
-
-        <h4 class="font-medium text-2xl py-4 text-Very-Dark-Blue">
-          Intelligent search
-        </h4>
-        <p class="text-grayish-Blue text-base">
-          Our powerful search feature will help you find saved sites in no time
-          at all. No need to trawl through all of your bookmarks. More Info
-        </p>
+        <div class="lg:w-1/2">
+          <h4 class="font-medium text-2xl py-4 text-Very-Dark-Blue">
+            Intelligent search
+          </h4>
+          <p class="text-grayish-Blue text-base">
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks. More
+            Info
+          </p>
+        </div>
       </section>
 
       <section id="share" class="hidden py-10">
